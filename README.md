@@ -10,21 +10,20 @@
 
 - [官方提供的工具](#官方提供的工具)
   - [企业协作平台](#企业协作平台)
-  - [云计算平台](#云计算平台)
-  - [AI 编程 Agent CLI](#ai-编程-agent-cli)
   - [云存储工具](#云存储工具)
-  - [小程序开发工具](#小程序开发工具)
-  - [AI 平台 CLI](#ai-平台-cli)
+  - [开发工具](#开发工具)
+  - [云计算平台](#云计算平台)
+  - [AI 开发工具](#ai-开发工具)
 - [第三方提供的工具](#第三方提供的工具)
   - [社交与内容平台](#社交与内容平台)
   - [音乐与娱乐](#音乐与娱乐)
   - [生活服务](#生活服务)
+  - [翻译与搜索工具](#翻译与搜索工具)
   - [知识与社区](#知识与社区)
-  - [云存储工具](#云存储工具-1)
-  - [翻译工具](#翻译工具)
-  - [搜索工具](#搜索工具)
   - [微信生态](#微信生态)
-  - [开发工具](#开发工具)
+  - [企业协作平台](#企业协作平台-1)
+  - [云存储工具](#云存储工具-1)
+  - [开发工具](#开发工具-1)
   - [聚合资源](#聚合资源)
 - [其他待补充项](#其他待补充项)
 
@@ -36,32 +35,8 @@
 
 | 平台 | CLI 名称 | 安装方式 | Stars | 语言 | 功能 | 链接 |
 |------|---------|---------|-------|------|------|------|
-| 飞书 | `lark` (官方) | `npm install -g @larksuite/cli` | ~7.7k | Go | 飞书官方 CLI，200+ 命令覆盖 IM/文档/多维表格/日历/邮件/任务/会议等 14 个业务域 | [larksuite/cli](https://github.com/larksuite/cli) |
-| 企业微信 | `wecom-cli` (官方) | `npm install -g @wecom/cli` | ~1.7k | Rust | 腾讯官方：通讯录/任务/会议/消息/日程/文档/智能表，支持 AI Agent | [WecomTeam/wecom-cli](https://github.com/WecomTeam/wecom-cli) |
-
-### 云计算平台
-
-| 厂商 | CLI 名称 | 安装方式 | 语言 | Stars | 开源 | 链接 |
-|------|---------|---------|------|-------|------|------|
-| 阿里云 | `aliyun` | `brew install aliyun-cli` | Go | ~940 | Apache 2.0 | [aliyun/aliyun-cli](https://github.com/aliyun/aliyun-cli) |
-| 腾讯云 | `tccli` | `pip install tccli` | Python | ~117 | Apache 2.0 | [TencentCloud/tencentcloud-cli](https://github.com/TencentCloud/tencentcloud-cli) |
-| 华为云 | `hcloud` (KooCLI) | curl 脚本安装 | — | — | 闭源 | [官方文档](https://support.huaweicloud.com/hcli/index.html) |
-| 百度智能云 | `bcecmd` | 下载二进制 | Go | ~1 | 开源 | [baidubce/bce-cmd](https://github.com/baidubce/bce-cmd) |
-| 京东云 | `jdc` | `pip install -U jdcloud_cli` | Python | ~86 | Apache 2.0 | [jdcloud-api/jdcloud-cli](https://github.com/jdcloud-api/jdcloud-cli) |
-| 火山引擎 | `ve` | 下载二进制 | Go | ~30 | Apache 2.0 | [volcengine/volcengine-cli](https://github.com/volcengine/volcengine-cli) |
-| UCloud | `ucloud` | `brew install ucloud` | Go | ~97 | Apache 2.0 | [ucloud/ucloud-cli](https://github.com/ucloud/ucloud-cli) |
-| 天翼云 | 日志服务 CLI | 参考官方文档 | — | — | 闭源 | [官方文档](https://www.ctyun.cn/document/10261471/11057592) |
-
-> 联通云、移动云目前均未发现官方通用 CLI 工具。天翼云仅有日志服务专项 CLI。
-
-### AI 编程 Agent CLI
-
-终端内运行的 AI 编程助手，可读写代码、执行 Shell、自主规划任务。
-
-| 公司 | CLI 名称 | 安装方式 | Stars | 功能 | 链接 |
-|------|---------|---------|-------|------|------|
-| 阿里通义千问 | `qwen-code` | `npm install -g @qwen-code/qwen-code@latest` / `brew install qwen-code` | ~20.7k | fork 自 Gemini CLI，支持 MCP、IDE 集成 | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) |
-| Moonshot (Kimi) | `kimi-cli` | `pip install kimi-cli` | ~7.8k | 代码编辑/Shell/Web 搜索/MCP，支持 VS Code / Zed / JetBrains | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) |
+| 飞书 | `lark` | `npm install -g @larksuite/cli` | ~7.7k | Go | 飞书官方 CLI，200+ 命令覆盖 IM/文档/多维表格/日历/邮件/任务/会议等 14 个业务域 | [larksuite/cli](https://github.com/larksuite/cli) |
+| 企业微信 | `wecom-cli` | `npm install -g @wecom/cli` | ~1.7k | Rust | 腾讯官方：通讯录/任务/会议/消息/日程/文档/智能表，支持 AI Agent | [WecomTeam/wecom-cli](https://github.com/WecomTeam/wecom-cli) |
 
 ### 云存储工具
 
@@ -70,7 +45,9 @@
 | 七牛云 | `qshell` | 下载二进制 | ~1k | Go | 文件上传/下载/管理、CDN 管理、音视频处理 | [qiniu/qshell](https://github.com/qiniu/qshell) |
 | 又拍云 | `upx` | `go install` / Scoop / Docker | ~200 | Go | 文件上传/下载/管理，支持 Mac/Linux/Windows | [upyun/upx](https://github.com/upyun/upx) |
 
-### 小程序开发工具
+### 开发工具
+
+> 含小程序开发工具、代码托管、数据采集等面向开发者的工具。
 
 | 平台 | CLI 名称 | 安装方式 | 功能 | 链接 |
 |------|---------|---------|------|------|
@@ -81,7 +58,33 @@
 | 快手 | `ks-miniprogram-ci` | `npm install ks-miniprogram-ci` | 上传、预览 | [官方文档](https://mp.kuaishou.com/docs/develop/guide/ci.html) |
 | 京东 | `jdmp-cli` | `npm install -g @jd/jdmp-cli` | 上传、预览 | [官方文档](https://mp-docs.jd.com/doc/dev/guide/0000001270) |
 
-### AI 平台 CLI
+### 云计算平台
+
+| 厂商 | CLI 名称 | 安装方式 | 语言 | Stars | 开源 | 链接 |
+|------|---------|---------|------|-------|------|------|
+| 阿里云 | `aliyun` | `brew install aliyun-cli` | Go | ~940 | Apache 2.0 | [aliyun/aliyun-cli](https://github.com/aliyun/aliyun-cli) |
+| 腾讯云 | `tccli` | `pip install tccli` | Python | ~117 | Apache 2.0 | [TencentCloud/tencentcloud-cli](https://github.com/TencentCloud/tencentcloud-cli) |
+| UCloud | `ucloud` | `brew install ucloud` | Go | ~97 | Apache 2.0 | [ucloud/ucloud-cli](https://github.com/ucloud/ucloud-cli) |
+| 京东云 | `jdc` | `pip install -U jdcloud_cli` | Python | ~86 | Apache 2.0 | [jdcloud-api/jdcloud-cli](https://github.com/jdcloud-api/jdcloud-cli) |
+| 火山引擎 | `ve` | 下载二进制 | Go | ~30 | Apache 2.0 | [volcengine/volcengine-cli](https://github.com/volcengine/volcengine-cli) |
+| 华为云 | `hcloud` (KooCLI) | curl 脚本安装 | — | — | 闭源 | [官方文档](https://support.huaweicloud.com/hcli/index.html) |
+| 百度智能云 | `bcecmd` | 下载二进制 | Go | ~1 | 开源 | [baidubce/bce-cmd](https://github.com/baidubce/bce-cmd) |
+| 天翼云 | 日志服务 CLI | 参考官方文档 | — | — | 闭源 | [官方文档](https://www.ctyun.cn/document/10261471/11057592) |
+
+> 联通云、移动云目前均未发现官方通用 CLI 工具。天翼云仅有日志服务专项 CLI。
+
+### AI 开发工具
+
+#### AI 编程 Agent CLI
+
+终端内运行的 AI 编程助手，可读写代码、执行 Shell、自主规划任务。
+
+| 公司 | CLI 名称 | 安装方式 | Stars | 功能 | 链接 |
+|------|---------|---------|-------|------|------|
+| 阿里通义千问 | `qwen-code` | `npm install -g @qwen-code/qwen-code@latest` / `brew install qwen-code` | ~20.7k | fork 自 Gemini CLI，支持 MCP、IDE 集成 | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) |
+| Moonshot (Kimi) | `kimi-cli` | `pip install kimi-cli` | ~7.8k | 代码编辑/Shell/Web 搜索/MCP，支持 VS Code / Zed / JetBrains | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) |
+
+#### AI 平台 CLI
 
 调用 AI 模型 API 的命令行工具（非编程 Agent 类）。
 
@@ -123,10 +126,10 @@
 |------|--------|---------|-------|------|------|------|
 | 网易云音乐 | `musicbox` | `pip3 install NetEase-MusicBox` / `brew install musicbox` | ~9.8k | Python | 命令行音乐播放器：排行榜/搜索/歌单/登录/DJ/歌词 (已归档) | [darknessomi/musicbox](https://github.com/darknessomi/musicbox) |
 | 网易云/QQ/酷狗/酷我/咪咕等 | `musicdl` | `pip install musicdl` | ~4k | Python | 轻量级无损音乐下载器，支持数十个音乐平台 | [CharlesPikachu/musicdl](https://github.com/CharlesPikachu/musicdl) |
-| 网易云音乐 | `ncm` | `python3 setup.py install` | ~585 | Python | 网易云音乐下载器，完整 ID3 元数据 | [codezjx/netease-cloud-music-dl](https://github.com/codezjx/netease-cloud-music-dl) |
-| 网易云音乐 | `netease-music-tui` | AUR / 下载二进制 / `cargo build` | ~431 | Rust | 终端 TUI 客户端，支持 Windows | [betta-cyber/netease-music-tui](https://github.com/betta-cyber/netease-music-tui) |
 | 豆瓣FM | `douban.fm` | `npm install douban.fm -g` | ~1.6k | Node.js | 命令行豆瓣FM播放器，红心/歌词/离线 | [guo-yu/douban.fm](https://github.com/guo-yu/douban.fm) |
 | 豆瓣FM | `douban.fm` (Python) | `pip install douban.fm` | ~784 | Python | 终端豆瓣FM播放器，依赖 mplayer | [taizilongxu/douban.fm](https://github.com/taizilongxu/douban.fm) |
+| 网易云音乐 | `ncm` | `python3 setup.py install` | ~585 | Python | 网易云音乐下载器，完整 ID3 元数据 | [codezjx/netease-cloud-music-dl](https://github.com/codezjx/netease-cloud-music-dl) |
+| 网易云音乐 | `netease-music-tui` | AUR / 下载二进制 / `cargo build` | ~431 | Rust | 终端 TUI 客户端，支持 Windows | [betta-cyber/netease-music-tui](https://github.com/betta-cyber/netease-music-tui) |
 
 > QQ 音乐、酷狗、酷我目前未发现独立 CLI 播放器项目（Star > 50）。`musicdl` 已覆盖这些平台的下载功能。
 
@@ -139,6 +142,13 @@
 
 > 美团、饿了么、滴滴、大众点评、闲鱼、拼多多、高德地图均未发现 Star > 50 的 CLI 工具。
 
+### 翻译与搜索工具
+
+| 类型 | 项目名 | 安装方式 | Stars | 语言 | 功能 | 链接 |
+|------|--------|---------|-------|------|------|------|
+| 翻译 | `fanyi` | `npm i fanyi -g` | ~1.5k | Node.js | 中英翻译 CLI，集成 iciba + DeepSeek AI | [afc163/fanyi](https://github.com/afc163/fanyi) |
+| 搜索 | open-webSearch | `npm run search:cli` | ~976 | — | 多引擎搜索（Bing/Baidu/DuckDuckGo），CLI / HTTP / MCP 三模式 | [Aas-ee/open-webSearch](https://github.com/Aas-ee/open-webSearch) |
+
 ### 知识与社区
 
 | 平台 | 项目名 | 安装方式 | Stars | 语言 | 功能 | 链接 |
@@ -147,24 +157,6 @@
 | 语雀 | `yuque-tools` | npm / 下载可执行文件 | ~542 | TypeScript | 语雀知识库+团队资源批量导出/备份（无需 Token） | [vannvan/yuque-tools](https://github.com/vannvan/yuque-tools) |
 
 > 掘金、CSDN 目前未发现 Star > 50 的 CLI 工具。豆瓣仅有 FM 播放器（见音乐分类）。
-
-### 云存储工具
-
-| 厂商 | CLI 名称 | 安装方式 | Stars | 语言 | 功能 | 链接 |
-|------|---------|---------|-------|------|------|------|
-| 蓝奏云 | LanZouCloud-CMD | pip / 下载安装包 | ~526 | Python | 无限制上传/下载，文件夹管理，分享链接 | [zaxtyson/LanZouCloud-CMD](https://github.com/zaxtyson/LanZouCloud-CMD) |
-
-### 翻译工具
-
-| 项目名 | 安装方式 | Stars | 语言 | 功能 | 链接 |
-|--------|---------|-------|------|------|------|
-| `fanyi` | `npm i fanyi -g` | ~1.5k | Node.js | 中英翻译 CLI，集成 iciba + DeepSeek AI | [afc163/fanyi](https://github.com/afc163/fanyi) |
-
-### 搜索工具
-
-| 项目名 | 安装方式 | Stars | 功能 | 链接 |
-|--------|---------|-------|------|------|
-| open-webSearch | `npm run search:cli` | ~976 | 多引擎搜索（Bing/Baidu/DuckDuckGo），提供 CLI / HTTP / MCP 三种模式 | [Aas-ee/open-webSearch](https://github.com/Aas-ee/open-webSearch) |
 
 ### 微信生态
 
@@ -192,15 +184,33 @@
 
 > ItChat、wechaty、WeChatFerry 本质上是 SDK/库，但在微信 Bot 生态中不可忽视，很多 CLI 工具基于它们构建。
 
+### 企业协作平台
+
+| 平台 | 项目名 | 安装方式 | Stars | 语言 | 功能 | 链接 |
+|------|--------|---------|-------|------|------|------|
+| 钉钉 | `dingtalk-workspace-cli` | `npm install -g dingtalk-workspace-cli` | ~1.5k | — | 86 条命令：联系人/日历/待办/审批/打卡/AI 表格等 | [DingTalk-Real-AI/dingtalk-workspace-cli](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) |
+| 飞书 | `feishu-cli` | 脚本安装 | ~843 | Go | 飞书全功能 CLI，Markdown 与飞书文档双向无损转换，Mermaid 图表渲染 | [riba2534/feishu-cli](https://github.com/riba2534/feishu-cli) |
+| 飞书 | `feishu-doc-export` | 下载二进制 | ~761 | C# | 飞书文档批量导出 Markdown/DOCX/PDF，保留目录结构 | [eternalfree/feishu-doc-export](https://github.com/eternalfree/feishu-doc-export) |
+| 飞书 | `feishu-tool` (Feishu-MCP) | `npm install -g feishu-mcp@latest` | ~599 | TypeScript | MCP + 独立 CLI 双模式：文档增删改查、任务管理、用户查询 | [cso1z/Feishu-MCP](https://github.com/cso1z/Feishu-MCP) |
+| 飞书 | `feishu-docx` | `pip install feishu-docx` | ~171 | Python | 飞书文档/表格/知识库导出 Markdown，CLI + TUI 双界面 | [leemysw/feishu-docx](https://github.com/leemysw/feishu-docx) |
+| 飞书 | `feishu` (Bot) | `go install github.com/CatchZeng/feishu@latest` | ~99 | Go | 飞书机器人 CLI：发送文本/富文本/图片/消息卡片，适合 CI/CD | [CatchZeng/feishu](https://github.com/CatchZeng/feishu) |
+| 多平台桥接 | `cc-connect` | Go 编译 | — | — | 桥接 Claude Code/Cursor/Gemini CLI 到飞书/钉钉/企微/Slack | [chenhg5/cc-connect](https://github.com/chenhg5/cc-connect) |
+
+### 云存储工具
+
+| 厂商 | CLI 名称 | 安装方式 | Stars | 语言 | 功能 | 链接 |
+|------|---------|---------|-------|------|------|------|
+| 蓝奏云 | LanZouCloud-CMD | pip / 下载安装包 | ~526 | Python | 无限制上传/下载，文件夹管理，分享链接 | [zaxtyson/LanZouCloud-CMD](https://github.com/zaxtyson/LanZouCloud-CMD) |
+
 ### 开发工具
 
-> 包含代码托管、数据采集等面向开发者的工具。
+> 含代码托管、数据采集等面向开发者的工具。
 
-| 平台/覆盖 | 项目名 | 安装方式 | Stars | 语言 | 功能 | 链接 |
-|----------|--------|---------|-------|------|------|------|
-| Gitee | `gitee` | 下载二进制 / `cargo build` | ~2 | Rust | 仿 gh CLI，支持 repo/issue/PR 操作 | [hex2dec/gitee-cli](https://github.com/hex2dec/gitee-cli) |
+| 平台 | 项目名 | 安装方式 | Stars | 语言 | 功能 | 链接 |
+|------|--------|---------|-------|------|------|------|
 | 微博 | weibo-crawler | pip | ~4.1k | Python | 微博内容/图片/视频爬取 | [dataabc/weibo-crawler](https://github.com/dataabc/weibo-crawler) |
 | B站 | bilibili-api | pip | ~3.4k | Python | 完整 B站 API 封装（视频/番剧/用户/直播） | [Nemo2011/bilibili-api](https://github.com/Nemo2011/bilibili-api) |
+| Gitee | `gitee` | 下载二进制 / `cargo build` | ~2 | Rust | 仿 gh CLI，支持 repo/issue/PR 操作 | [hex2dec/gitee-cli](https://github.com/hex2dec/gitee-cli) |
 
 > Coding (腾讯) 目前未发现独立 CLI 工具，其 DevOps 功能通过腾讯云 CLI (`tccli`) 调用。
 
