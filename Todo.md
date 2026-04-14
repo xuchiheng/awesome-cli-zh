@@ -73,3 +73,27 @@
 | 语雀 | [vannvan/yuque-tools](https://github.com/vannvan/yuque-tools) | ~542 | `ytool` | 语雀知识库+团队资源批量导出/备份（无需 Token） | [✅ 详情](tools/third-party/other/yuque-tools/README.md) | — |
 | Gitee | [hex2dec/gitee-cli](https://github.com/hex2dec/gitee-cli) | ~2 | `gitee` | 仿 gh CLI，支持 repo/issue/PR 操作 | ⏳ | — |
 | 多平台桥接 | [chenhg5/cc-connect](https://github.com/chenhg5/cc-connect) | — | `cc-connect` | 桥接 Claude Code/Cursor/Gemini CLI 到飞书/钉钉/企微/Slack | ⏳ | — |
+
+### 电商
+
+> 淘宝、京东、拼多多、抖音电商、小红书电商、唯品会、苏宁易购等平台的 CLI 工具调研。
+
+| 平台 | 链接 | Stars | CLI 名称 | 功能 | 验证状态 | 备注 |
+|------|------|-------|---------|------|----------|------|
+| — | — | — | — | — | — | 待补充 |
+
+### 游戏
+
+> 腾讯游戏、网易游戏、米哈游、Steam 国服、TapTap 等平台的 CLI 工具调研。
+
+| 平台 | 链接 | Stars | CLI 名称 | 功能 | 验证状态 | 备注 |
+|------|------|-------|---------|------|----------|------|
+| — | — | — | — | — | — | 待补充 |
+
+### 股票 / 证券
+
+> 同花顺、东方财富、雪球、富途、老虎证券、中信证券、华泰证券等平台的 CLI 工具调研。
+
+| 平台 | 链接 | Stars | CLI 名称 | 功能 | 验证状态 | 备注 |
+|------|------|-------|---------|------|----------|------|
+| — | — | — | — | — | — | 待补充 |
