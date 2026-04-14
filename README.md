@@ -72,8 +72,8 @@
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
 | 飞书 | [larksuite/cli](https://github.com/larksuite/cli) | ~7.7k | [`lark-cli`](tools/official/enterprise/lark/README.md) | 飞书官方 CLI，200+ 命令覆盖 IM/文档/多维表格/日历/邮件/任务/会议等 14 个业务域 | 需登录 |
-| 企业微信 | [WecomTeam/wecom-cli](https://github.com/WecomTeam/wecom-cli) | ~1.7k | ⏳ | 腾讯官方：通讯录/任务/会议/消息/日程/文档/智能表，支持 AI Agent | — |
-| 钉钉 | [DingTalk-Real-AI/dingtalk-workspace-cli](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | ~1.5k | ⏳ | 钉钉官方开源 CLI，86 条命令覆盖联系人/日历/待办/审批/打卡/AI 表格等 | — |
+| 企业微信 | [WecomTeam/wecom-cli](https://github.com/WecomTeam/wecom-cli) | ~1.7k | [`wecom-cli`](tools/official/enterprise/wecom/README.md) | 腾讯官方：通讯录/任务/会议/消息/日程/文档/智能表，支持 AI Agent | 需机器人凭证（≤10人企业），否则会提示初始化失败 |
+| 钉钉 | [DingTalk-Real-AI/dingtalk-workspace-cli](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | ~1.5k | [`dws`](tools/official/enterprise/dingtalk/README.md) | 钉钉官方开源 CLI，86 条命令覆盖联系人/日历/待办/审批/打卡/AI 表格等 | 需组织开启 CLI 数据访问权限（共创阶段） |
 
 ## 第三方提供的工具
 
@@ -83,17 +83,17 @@
 
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
-| 小红书 | [JoeanAmier/XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader) | ~10.8k | ⏳ | 小红书链接提取/作品采集/下载，支持 TUI/API/MCP 模式 | — |
-| 小红书 | [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | ~1.6k | [`xhs-cli`](tools/third-party/content/xiaohongshu-cli/README.md) | 搜索笔记、阅读、点赞、收藏、评论、发布，QR 码登录 | API 版（HTTP + 签名/指纹伪装） |
-| 小红书 | [jackwener/xhs-cli](https://github.com/jackwener/xhs-cli) | ~439 | [`xhs-cli`](tools/third-party/content/xhs-cli/README.md) | 搜索、阅读、点赞、收藏、评论，Chrome Cookie 提取 | 浏览器版（camoufox + `window.__INITIAL_STATE__`） |
+| 小红书 | [JoeanAmier/XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader) | ~10.8k | ⏳ | 小红书链接提取/作品采集/下载，支持 TUI/API/MCP 模式 |  |
+| 小红书 | [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | ~1.6k | [`xhs-cli`](tools/third-party/content/xiaohongshu-cli/README.md) | 搜索笔记、阅读、点赞、收藏、评论、发布，QR 码登录 | 命令为 `xhs`，与 `xhs-cli` 冲突 |
+| 小红书 | [jackwener/xhs-cli](https://github.com/jackwener/xhs-cli) | ~439 | [`xhs-cli`](tools/third-party/content/xhs-cli/README.md) | 搜索、阅读、点赞、收藏、评论，Chrome Cookie 提取 | 命令为 `xhs`，与 `xiaohongshu-cli` 冲突 |
 
 #### 视频
 
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
 | B站/优酷/爱奇艺/搜狐/网易等 | [soimort/you-get](https://github.com/soimort/you-get) | ~56.8k | [`you-get`](tools/third-party/video/you-get/README.md) | 多平台视频/音频/图片下载 | 部分站点需 cookies |
-| B站/微博/优酷/抖音等 | [iawia002/lux](https://github.com/iawia002/lux) | ~25k | ⏳ | 多平台视频下载 CLI | — |
-| 抖音/TikTok/B站/快手 | [Evil0ctal/Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) | ~15k | ⏳ | 无水印视频批量下载 | — |
+| B站/微博/优酷/抖音等 | [iawia002/lux](https://github.com/iawia002/lux) | ~25k | ⏳ | 多平台视频下载 CLI |  |
+| 抖音/TikTok/B站/快手 | [Evil0ctal/Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) | ~15k | ⏳ | 无水印视频批量下载 |  |
 
 > 掘金、CSDN 目前未发现 Star > 50 的 CLI 工具。豆瓣仅有 FM 播放器（见音乐分类）。
 
@@ -102,10 +102,10 @@
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
 | 微信/企微/WhatsApp | [wechaty/wechaty](https://github.com/wechaty/wechaty) | ~22.7k | [`wechaty`](tools/third-party/wechat/wechaty/README.md) | 跨平台聊天机器人 RPA SDK，微信/企微/WhatsApp | 需 Puppet Provider / Token |
-| 微信 | [sunnyyoung/WeChatTweak](https://github.com/sunnyyoung/WeChatTweak) | ~13.6k | ⏳ | macOS 微信增强：防撤回、多开、免认证登录 | — |
+| 微信 | [sunnyyoung/WeChatTweak](https://github.com/sunnyyoung/WeChatTweak) | ~13.6k | ⏳ | macOS 微信增强：防撤回、多开、免认证登录 |  |
 | 微信公众号 | [doocs/md](https://github.com/doocs/md) | ~12.3k | [`md-cli`](tools/third-party/wechat/md-cli/README.md) | Markdown 转微信公众号文章、自定义主题、AI 助手 | 启动本地 Web 服务 |
-| 微信 | [LingDong-/wechit](https://github.com/LingDong-/wechit) | ~102 | ⏳ | 终端版微信：收发消息、图片 ASCII 渲染 | — |
-| 微信 | [goorockey/node-wechat-terminal](https://github.com/goorockey/node-wechat-terminal) | ~99 | ⏳ | 终端微信客户端：联系人/消息/群聊 | — |
+| 微信 | [LingDong-/wechit](https://github.com/LingDong-/wechit) | ~102 | ⏳ | 终端版微信：收发消息、图片 ASCII 渲染 |  |
+| 微信 | [goorockey/node-wechat-terminal](https://github.com/goorockey/node-wechat-terminal) | ~99 | ⏳ | 终端微信客户端：联系人/消息/群聊 |  |
 
 > `wechaty` 提供 CLI 辅助命令，但核心 Bot 功能仍需配合 SDK 代码调用。
 
