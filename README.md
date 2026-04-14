@@ -69,9 +69,9 @@
 
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
-| 飞书 | [larksuite/cli](https://github.com/larksuite/cli) | ~7.7k | [`lark-cli`](tools/official/enterprise/lark/README.md) | 飞书官方 CLI，200+ 命令覆盖 IM/文档/多维表格/日历/邮件/任务/会议等 14 个业务域 | 需登录 |
-| 企业微信 | [WecomTeam/wecom-cli](https://github.com/WecomTeam/wecom-cli) | ~1.7k | [`wecom-cli`](tools/official/enterprise/wecom/README.md) | 腾讯官方：通讯录/任务/会议/消息/日程/文档/智能表，支持 AI Agent | 需机器人凭证（≤10人企业），否则会提示初始化失败 |
-| 钉钉 | [DingTalk-Real-AI/dingtalk-workspace-cli](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | ~1.5k | [`dws`](tools/official/enterprise/dingtalk/README.md) | 钉钉官方开源 CLI，86 条命令覆盖联系人/日历/待办/审批/打卡/AI 表格等 | 需组织开启 CLI 数据访问权限（共创阶段） |
+| 飞书 | [larksuite/cli](https://github.com/larksuite/cli) | ~7.7k | [`lark-cli`](official/lark/README.md) | 飞书官方 CLI，200+ 命令覆盖 IM/文档/多维表格/日历/邮件/任务/会议等 14 个业务域 | 需登录 |
+| 企业微信 | [WecomTeam/wecom-cli](https://github.com/WecomTeam/wecom-cli) | ~1.7k | [`wecom-cli`](official/wecom/README.md) | 腾讯官方：通讯录/任务/会议/消息/日程/文档/智能表，支持 AI Agent | 需机器人凭证（≤10人企业），否则会提示初始化失败 |
+| 钉钉 | [DingTalk-Real-AI/dingtalk-workspace-cli](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | ~1.5k | [`dws`](official/dingtalk/README.md) | 钉钉官方开源 CLI，86 条命令覆盖联系人/日历/待办/审批/打卡/AI 表格等 | 需组织开启 CLI 数据访问权限（共创阶段） |
 
 ## 第三方提供的工具
 
@@ -81,10 +81,10 @@
 
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
-| B站/优酷/爱奇艺/搜狐/网易等 | [soimort/you-get](https://github.com/soimort/you-get) | ~56.8k | [`you-get`](tools/third-party/video/you-get/README.md) | 多平台视频/音频/图片下载 | 网页解析，部分站点需 cookies |
+| B站/优酷/爱奇艺/搜狐/网易等 | [soimort/you-get](https://github.com/soimort/you-get) | ~56.8k | [`you-get`](third-party/you-get/README.md) | 多平台视频/音频/图片下载 | 网页解析，部分站点需 cookies |
 | B站/微博/优酷/抖音等 | [iawia002/lux](https://github.com/iawia002/lux) | ~25k | ⏳ | 多平台视频下载 CLI | 网页解析 |
-| 综合 | [jackwener/OpenCLI](https://github.com/jackwener/OpenCLI) | ~15.7k | [`opencli`](tools/third-party/general/opencli/README.md) | 87+ 网站适配器、浏览器自动化、Electron App 控制、CLI Hub | 需安装 Browser Bridge 扩展 |
-| 小红书 | [jackwener/xhs-cli](https://github.com/jackwener/xhs-cli) | ~439 | [`xhs-cli`](tools/third-party/content/xhs-cli/README.md) | 搜索、阅读、点赞、收藏、评论，Chrome Cookie 提取 | 基于浏览器模拟，命令为 `xhs`，与 `xiaohongshu-cli` 冲突 |
+| 综合 | [jackwener/OpenCLI](https://github.com/jackwener/OpenCLI) | ~15.7k | [`opencli`](third-party/general/opencli/README.md) | 87+ 网站适配器、浏览器自动化、Electron App 控制、CLI Hub | 需安装 Browser Bridge 扩展 |
+| 小红书 | [jackwener/xhs-cli](https://github.com/jackwener/xhs-cli) | ~439 | [`xhs-cli`](third-party/xhs-cli/README.md) | 搜索、阅读、点赞、收藏、评论，Chrome Cookie 提取 | 基于浏览器模拟，命令为 `xhs`，与 `xiaohongshu-cli` 冲突 |
 | 微信 | [LingDong-/wechit](https://github.com/LingDong-/wechit) | ~102 | ⏳ | 终端版微信：收发消息、图片 ASCII 渲染 | 基于 Selenium 控制 Chrome |
 
 ### 逆向 API / 非官方协议
@@ -93,14 +93,14 @@
 
 | 平台 | 链接 | Stars | CLI 名称 | 功能 | 备注 |
 |------|------|-------|---------|------|------|
-| 微信/企微/WhatsApp | [wechaty/wechaty](https://github.com/wechaty/wechaty) | ~22.7k | [`wechaty`](tools/third-party/wechat/wechaty/README.md) | 跨平台聊天机器人 RPA SDK，微信/企微/WhatsApp | 非官方协议，需 Puppet Provider / Token |
-| B站 | [nilaoda/BBDown](https://github.com/nilaoda/BBDown) | ~13.7k | [`bbdown`](tools/third-party/video/bbdown/README.md) | B站视频下载（4K/弹幕/字幕/杜比视界）| 调用 TV/App/Intl 端解析接口 |
+| 微信/企微/WhatsApp | [wechaty/wechaty](https://github.com/wechaty/wechaty) | ~22.7k | [`wechaty`](third-party/wechaty/README.md) | 跨平台聊天机器人 RPA SDK，微信/企微/WhatsApp | 非官方协议，需 Puppet Provider / Token |
+| B站 | [nilaoda/BBDown](https://github.com/nilaoda/BBDown) | ~13.7k | [`bbdown`](third-party/bbdown/README.md) | B站视频下载（4K/弹幕/字幕/杜比视界）| 调用 TV/App/Intl 端解析接口 |
 | 微信 | [sunnyyoung/WeChatTweak](https://github.com/sunnyyoung/WeChatTweak) | ~13.6k | ⏳ | macOS 微信增强：防撤回、多开、免认证登录 | 客户端 Patch |
 | 小红书 | [JoeanAmier/XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader) | ~10.8k | ⏳ | 小红书链接提取/作品采集/下载，支持 TUI/API/MCP 模式 | Cookie 提取，非官方接口 |
-| 小红书 | [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | ~1.6k | [`xhs-cli`](tools/third-party/content/xiaohongshu-cli/README.md) | 搜索笔记、阅读、点赞、收藏、评论、发布，QR 码登录 | 逆向 API，命令为 `xhs`，与 `xhs-cli` 冲突 |
-| B站 | [public-clis/bilibili-cli](https://github.com/public-clis/bilibili-cli) | ~665 | [`bilibili-cli`](tools/third-party/video/bilibili-cli/README.md) | 视频搜索、UP主数据、弹幕、点赞投币 | 逆向 API |
+| 小红书 | [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | ~1.6k | [`xhs-cli`](third-party/xiaohongshu-cli/README.md) | 搜索笔记、阅读、点赞、收藏、评论、发布，QR 码登录 | 逆向 API，命令为 `xhs`，与 `xhs-cli` 冲突 |
+| B站 | [public-clis/bilibili-cli](https://github.com/public-clis/bilibili-cli) | ~665 | [`bilibili-cli`](third-party/bilibili-cli/README.md) | 视频搜索、UP主数据、弹幕、点赞投币 | 逆向 API |
 | 微信 | [goorockey/node-wechat-terminal](https://github.com/goorockey/node-wechat-terminal) | ~99 | ⏳ | 终端微信客户端：联系人/消息/群聊 | 非官方网页版协议 |
-| 微博 | [jackwener/weibo-cli](https://github.com/jackwener/weibo-cli) | ~63 | [`weibo-cli`](tools/third-party/content/weibo-cli/README.md) | 热搜、搜索、时间线、评论、转发 | 逆向 API |
+| 微博 | [jackwener/weibo-cli](https://github.com/jackwener/weibo-cli) | ~63 | [`weibo-cli`](third-party/weibo-cli/README.md) | 热搜、搜索、时间线、评论、转发 | 逆向 API |
 
 ---
 
